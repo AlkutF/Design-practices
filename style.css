@@ -1,0 +1,20 @@
+.activity {
+    width: calc(100% / 5);
+    height: 180px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+    background-size: contain ; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
+.activity p {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-right: 10px;
+    opacity: 0;
+}
