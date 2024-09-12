@@ -1,0 +1,112 @@
+.exercise {
+    margin: 0;
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.databasic {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.steps-container {
+    text-align: center;
+}
+
+.steps-progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 1000px;
+}
+
+.steps-progress-wrapper::before {
+    content: "";
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 6px; 
+    width: 100%;
+    z-index: -1;
+}
+
+.steps-progress {
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 6px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.step {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 120px; 
+    width: 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #e0e0e0; 
+    transition: 0.5s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.step.active {
+    border-color:  #3498db;
+    background-color: #fff;
+}
+
+.step-btn {
+    background-color:  #3498db;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 12px 40px;
+    margin: 25px;
+    font-size: 26px; 
+}
+
+.step-btn:active { 
+    transform: scale(0.95);
+}
+
+.step-btn:focus {
+    outline: 0;
+}
+
+.step-btn:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.step:nth-child(2).active {
+    background-image: url('/img/2.jpg');
+}
+
+.step:nth-child(3).active {
+    background-image: url('/img/3.jpg');
+}
+
+.step:nth-child(4).active {
+    background-image: url('/img/4.jpg');
+}
+.step:nth-child(5).active {
+    background-image: url('/img/5.jpg');
+}
