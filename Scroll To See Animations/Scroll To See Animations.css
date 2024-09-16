@@ -1,0 +1,64 @@
+  
+
+.databasic {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 100px;
+    z-index: 1;
+}
+
+.exercise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+
+  }
+  
+
+  .container-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+
+.container {
+    width: 400px;
+    height: 170px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+    background-size: cover;
+    background-position: center; 
+  }
+  
+
+  .container.from-left {
+    transform: translateX(-100%);
+  }
+  
+
+  .container.from-right {
+    transform: translateX(100%);
+  }
+  
+  /* Cuando son visibles, se desplazan a su posición original */
+  .container.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+
+  .container p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
