@@ -1,17 +1,15 @@
-// Seleccionamos todos los contenedores
+
 const containers = document.querySelectorAll('.container');
 
-// Añadimos la clase 'from-left' o 'from-right' de forma alterna y aplicamos estilos dinámicos
 containers.forEach((container, index) => {
-  // Alternar entre left y right
+
   if (index % 2 === 0) {
     container.classList.add('from-left');
   } else {
     container.classList.add('from-right');
   }
 
-  // Aplicar estilos dinámicos desde JS
-  container.style.backgroundImage = `url('/img/${(index % 3) + 1}.jpg')`; // Alternar entre tres imágenes
+  container.style.backgroundImage = `url('/img/${(index % 3) + 1}.jpg')`; 
 });
 
 // Función para comprobar la visibilidad del contenedor
