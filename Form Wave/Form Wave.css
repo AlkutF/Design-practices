@@ -1,0 +1,91 @@
+body {
+    background-color: #407ec5;
+}
+
+.databasic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.container {
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+button {
+    background: lightblue;
+    border-radius: 8px;
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+    margin-left: 5%;
+    color: white;
+    padding: 10px 0;
+    outline: none; /* Elimina el borde del input al enfocarse */
+}
+
+.input-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    pointer-events: none;
+    display: flex;
+    gap: 2px; /* Ajusta el espaciado entre letras */
+}
+
+.input-control.focused label span {
+    transform: translateY(-30px);
+    color: rgba(255, 255, 255, 0.7); /* Cambia el color cuando sube */
+    transition: transform 0.2s ease, color 0.2s ease; /* Añade transición para el color */
+}
+
+.input-control span {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease; /* Asegura que ambos transform y color tengan transición */
+}
+
+p{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hace que el enlace tome el color del elemento padre */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el enlace */
+    color: rgb(142, 191, 234);
+}
